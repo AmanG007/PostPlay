@@ -8,12 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class PostCreateComponent implements OnInit {
 
   constructor() { }
+  newPost = "NO CONTENT" ;
 
   ngOnInit(): void {
   }
 
   onAddPost() {
-    alert("Post Saved");
+    this.newPost = 'This is user\'s post'
   }
+
+
 
 }
