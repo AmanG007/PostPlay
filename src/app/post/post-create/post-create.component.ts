@@ -8,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class PostCreateComponent implements OnInit {
 
   constructor() { }
+  enteredValue = '';
   newPost = "NO CONTENT" ;
 
   ngOnInit(): void {
   }
 
   onAddPost() {
-    this.newPost = 'This is user\'s post'
+    this.newPost = this.enteredValue;
   }
 
 

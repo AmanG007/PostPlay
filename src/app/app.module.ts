@@ -13,6 +13,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { PostCreateComponent } from './post/post-create/post-create.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { PostCreateComponent } from './post/post-create/post-create.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatDialogModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
