@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  constructor() {}
+  storedPosts: any = [];
 
+  onPostAdded(post: any) {
+    this.storedPosts.push(post);
+  }
 }

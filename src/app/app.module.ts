@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
-import {MatExpansionModule} from '@angular/material/expansion';
+import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { PostCreateComponent } from './post/post-create/post-create.component';
 import { FormsModule } from '@angular/forms';
@@ -29,6 +30,7 @@ import { PostListComponent } from './post/post-list/post-list.component';
   ],
   imports: [
     BrowserModule,
+    MatFormFieldModule,
     DragDropModule,
     MatButtonModule,
     MatIconModule,
