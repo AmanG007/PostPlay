@@ -8,6 +8,7 @@
                          ngModel
                          type="text"
                          required
+                         placeholder="Title"
                          minlength="3"
                          #title="ngModel">
                          <mat-error *ngIf="title.invalid">Write a title</mat-error>
@@ -21,6 +22,7 @@
                          ngModel 
                          type="text"
                          required
+                         placeholder="Content"
                          #content="ngModel">
                         </textarea>
                         <mat-error *ngIf="content.invalid">Write some content</mat-error>
