@@ -6,7 +6,7 @@ const Post = require("./models/post");
 
 const app = express();
 
-mongoose.connect("mongodb+srv://amang:byA9FCZZrpvhz6O7@cluster0.tspzp.mongodb.net/node-angular?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://amang:by*******@cluster0.tspzp.mongodb.net/node-angular?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to database!');
     })
